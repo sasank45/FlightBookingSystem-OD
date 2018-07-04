@@ -66,7 +66,7 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
     }
 
     public void listofflights(View view) {
-        Intent intent = new Intent(this, AvailableFlights.class);
+        Intent intent = new Intent(this, com.example.tutorialspoint7.myapplication.AvailableFlights.class);
         Button launchActivity = (Button) findViewById(R.id.searchid);
         String message = launchActivity.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);

@@ -22,4 +22,16 @@
     <string name="date_button_set">Set Date</string>
     <string name="date_view_set">The Date is: </string>
     <string name="date_selected"></string>
+    <string name="imgdesc">imgdesc</string>
+    <string-array name="Flights_array">
+        <item>AirIndia</item>
+        <item>Dubai Airlines</item>
+        <item>Kingfisher</item>
+        <item>Indigo</item>
+        <item>Tata Flights</item>
+        <item>Patanjali Flight</item>
+        <item>Indigo 6E098</item>
+        <item>SpiceJet R345</item>
+        <item>Air Asia 009</item>
+    </string-array>
 </resources>
