@@ -14,7 +14,7 @@
         android:layout_marginStart="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="From"
+        android:text="@string/From"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="95dp" />
@@ -27,7 +27,7 @@
         android:layout_marginStart="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="To"
+        android:text="@string/To"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="167dp" />
@@ -40,7 +40,7 @@
         android:layout_marginStart="8dp"
         android:ems="10"
         android:inputType="date"
-        android:text="Departdate"
+        android:text="@string/Departdate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="246dp" />
@@ -53,7 +53,7 @@
         android:layout_marginStart="8dp"
         android:ems="10"
         android:inputType="number"
-        android:text="No of Passengers"
+        android:text="@string/Passengers"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="317dp" />
@@ -62,8 +62,8 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Search"
+        android:text="@string/search"
         tools:layout_editor_absoluteX="134dp"
         tools:layout_editor_absoluteY="389dp" />
-    
+
 </LinearLayout>
