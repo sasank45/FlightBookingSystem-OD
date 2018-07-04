@@ -6,4 +6,9 @@
     <string name="Passengers">No of Passengers</string>
     <string name="search">Search</string>
     <string name="Availabilities">Available Flights Now</string>
+    <string name="flight_contents">
+        <font fgcolor="#FFFFFFFF">Name of Flight</font> Tata Indigo
+        <font fgcolor="#FFFFFFFF">Price</font> 20,000
+         <font fgcolor="#FFFFFFFF">Depart Time</font> 12:00 AM
+    </string>
 </resources>

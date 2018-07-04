@@ -9,5 +9,10 @@ public class AvailableFlights extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_available_flights);
+        if (savedInstanceState == null){
+            getFragmentManager().beginTransaction()
+                    .add(R.id.flightcontainer, ListingActivity.newInstance())
+                    .commit();
+        }
     }
 }
