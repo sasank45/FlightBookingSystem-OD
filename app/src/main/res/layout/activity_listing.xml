@@ -6,4 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".ListingActivity">
 
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Confirmed"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="57dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/smalltick"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="155dp" />
 </android.support.constraint.ConstraintLayout>
