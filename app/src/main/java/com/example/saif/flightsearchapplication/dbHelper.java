@@ -1,55 +1,78 @@
 package com.example.saif.flightsearchapplication;
 
-public class Note {
-    public static final String TABLE_NAME = "notes";
+public class dbHelper {
+
+    public static final String TABLE_NAME = "flighttable";
 
     public static final String COLUMN_ID = "id";
-    public static final String COLUMN_NOTE = "note";
-    public static final String COLUMN_TIMESTAMP = "timestamp";
+    public static final String COLUMN_FROM = "from";
+    public static final String COLUMN_TO = "to";
+    public static final String COLUMN_DEPART ="date";
+    public static final String COLUMN_NOPass = "passengers";
 
     private int id;
-    private String note;
-    private String timestamp;
+    private String from;
+    private String to;
+    private String date;
+    private String passengers;
 
 
     // Create table SQL query
     public static final String CREATE_TABLE =
             "CREATE TABLE " + TABLE_NAME + "("
                     + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-                    + COLUMN_NOTE + " TEXT,"
-                    + COLUMN_TIMESTAMP + " DATETIME DEFAULT CURRENT_TIMESTAMP"
+                    + COLUMN_FROM  + " TEXT,"
+                    + COLUMN_TO  + " TEXT,"
+                    + COLUMN_DEPART  + " TEXT,"
+                    + COLUMN_NOPass  + " TEXT,"
                     + ")";
 
-    public Note() {
+    public dbHelper() {
     }
 
-    public Note(int id, String note, String timestamp) {
+    public dbHelper(int id, String from, String to,String date,String passengers) {
         this.id = id;
-        this.note = note;
-        this.timestamp = timestamp;
+        this.from = from;
+        this.to = to;
+        this.date = date;
+        this.passengers=passengers;
     }
 
     public int getId() {
         return id;
     }
 
-    public String getNote() {
-        return note;
+    public String getFrom() {
+        return from;
     }
 
-    public void setNote(String note) {
-        this.note = note;
+    public void setfrom(String from) {
+        this.from = from;
     }
 
-    public String getTimestamp() {
-        return timestamp;
+    public String to() {
+        return to;
     }
 
     public void setId(int id) {
         this.id = id;
     }
 
-    public void setTimestamp(String timestamp) {
-        this.timestamp = timestamp;
+    public void to(String to) {
+        this.to = to;
+    }
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String from) {
+        this.date = date;
+    }
+    public String setPassengers() {
+        return passengers;
+    }
+
+    public void setPassengers(String passengers) {
+        this.passengers = passengers;
     }
 }
