@@ -23,7 +23,9 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
         Spinner spinner1 = (Spinner) findViewById(R.id.fromid);
+        Spinner spinner2 = (Spinner) findViewById(R.id.toid);
         spinner1.setOnItemSelectedListener(this);
+        spinner2.setOnItemSelectedListener(this);
         List<String> categories = new ArrayList<String>();
         categories.add("CHN");
         categories.add("BLR");
@@ -34,6 +36,7 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner1.setAdapter(dataAdapter);
+        spinner2.setAdapter(dataAdapter);
     }
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
