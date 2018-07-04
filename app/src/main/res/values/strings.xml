@@ -6,4 +6,14 @@
     <string name="Passengers">No of Passengers</string>
     <string name="search">Search</string>
     <string name="Availabilities">Available Flights Now</string>
+    <string-array name="places_array">
+        <item>BLR</item>
+        <item>CHN</item>
+        <item>KOL</item>
+        <item>DEL</item>
+        <item>VJY</item>
+        <item>MAD</item>
+        <item>SAT</item>
+        <item>PUN</item>
+    </string-array>
 </resources>
