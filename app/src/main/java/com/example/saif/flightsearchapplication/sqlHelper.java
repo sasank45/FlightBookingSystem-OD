@@ -4,7 +4,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.media.Image;
 import android.util.Log;
 
 public class sqlHelper extends SQLiteOpenHelper {
@@ -51,6 +50,7 @@ public class sqlHelper extends SQLiteOpenHelper {
     public Cursor getRow(String id){
         SQLiteDatabase database=getReadableDatabase();
         Cursor cursor=database.rawQuery("select name,dprttime,arvltime,totldur,Price from "+tblName+" where id ='"+id+"'",null);
+        return cursor;
     }
 
 }
