@@ -5,4 +5,5 @@
     <string name="Departdate">Depart Date</string>
     <string name="Passengers">No of Passengers</string>
     <string name="search">Search</string>
+    <string name="Availabilities">Available Flights Now</string>
 </resources>
