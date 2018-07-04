@@ -8,27 +8,46 @@
     android:gravity="center"
     tools:context=".SearchActivity">
 
+    <TextView
+        android:id="@+id/labelfrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fromid"
+        android:layout_marginTop="30dp"
+        android:text="Travelling From" />
+
+
     <Spinner
         android:id="@+id/fromid"
-        android:layout_width="match_parent"
+        android:layout_width="117dp"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:layout_marginBottom="10dp"
         android:hint="@string/From"
-        android:layout_marginBottom="5dp"/>
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/labelto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/labelfrom"
+        android:layout_above="@+id/toid"
+        android:paddingLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:text="Travelling to" />
 
     <Spinner
         android:id="@+id/toid"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:layout_toRightOf="@id/fromid"
+        android:layout_marginBottom="10dp"
         android:hint="@string/To"
-        android:layout_below="@id/fromid"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="5dp" />
+        android:paddingLeft="25dp"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/departid"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="date"
         android:hint="@string/Departdate"
@@ -39,15 +58,15 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
+        android:layout_below="@id/toid"
+        android:layout_toRightOf="@+id/departid"
         android:onClick="setDate"
         android:text="@string/date_button_set" />
 
     <EditText
         android:id="@+id/passengernoid"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
+        android:hint="No of Passengers"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:layout_below="@id/button1"
@@ -64,5 +83,7 @@
         android:layout_below="@id/passengernoid"
         android:onClick="listofflights"
         />
+
+
 
 </RelativeLayout>
