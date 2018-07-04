@@ -6,4 +6,24 @@
     <string name="Passengers">No of Passengers</string>
     <string name="search">Search</string>
     <string name="Availabilities">Available Flights Now</string>
+    <string-array name="from_array">
+        <item>DEL</item>
+        <item>MBI</item>
+        <item>CHN</item>
+        <item>KOL</item>
+        <item>HYD</item>
+        <item>VJW</item>
+        <item>BLR</item>
+        <item>HRY</item>
+    </string-array>
+    <string-array name="to_array">
+        <item>DEL</item>
+        <item>MBI</item>
+        <item>CHN</item>
+        <item>KOL</item>
+        <item>HYD</item>
+        <item>VJW</item>
+        <item>BLR</item>
+        <item>HRY</item>
+    </string-array>
 </resources>
