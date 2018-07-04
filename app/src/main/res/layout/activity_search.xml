@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="@string/From"
+        android:hint="@string/From"
         android:layout_marginBottom="5dp"/>
 
     <EditText
@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="@string/To"
+        android:hint="@string/To"
         android:layout_below="@id/fromid"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="5dp" />
@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="date"
-        android:text="@string/Departdate"
+        android:hint="@string/Departdate"
         android:layout_below="@id/toid"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="5dp" />
@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:text="@string/Passengers"
+        android:hint="@string/Passengers"
         android:layout_below="@id/departid"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="5dp" />
